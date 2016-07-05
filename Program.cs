@@ -57,10 +57,7 @@ namespace Circular_prime_digits
                 {
                     string newDigitStr = "";
                     char temp = str[0];
-                    for (int i = 1; i < str.Length; i++)
-                    {
-                        newDigitStr += str[i];
-                    }
+                    newDigitStr = str.Substring(1);
                     newDigitStr += temp;
                     newDigit = Convert.ToInt32(newDigitStr);
                     if (!primeArr.Contains(newDigit))
